@@ -1,0 +1,131 @@
+body{
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.contenedor {
+    margin: auto;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.678);
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: -14px 20px 47px 0px rgba(17,176,23,0.75);
+-webkit-box-shadow: -14px 20px 47px 0px rgba(17,176,23,0.75);
+-moz-box-shadow: -14px 20px 47px 0px rgba(17,176,23,0.75);
+}
+
+
+.calculadora {
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "pantalla pantalla pantalla pantalla"
+        "siete ocho nueve multiplicador"
+        "cuatro cinco seis divisor"
+        "uno dos tres resta"
+        "cero coma suma suma"
+        "igual igual borrar borrar";
+    gap: 10px;
+}
+
+
+.boton__calculadora {
+    border-radius: 10px;
+    font-size: 4rem;
+    font-family: "Play", monospace;
+    transition: 0.2s ease;
+}
+
+.boton__calculadora:hover{
+    background-color: rgba(129, 129, 129, 0.993);
+    color: rgb(81, 255, 0);
+    cursor: pointer;
+    box-shadow: -3px 2px 70px -20px rgba(19,255,0,0.75);
+    -webkit-box-shadow: -3px 2px 70px -20px rgba(19,255,0,0.75);
+    -moz-box-shadow: -3px 2px 70px -20px rgba(19,255,0,0.75);
+}
+
+.pantalla {
+    grid-area: pantalla;
+    height: 10vh;
+    border-radius: 10px;
+    background-color: black;
+    color: greenyellow;
+    font-size: 3rem;
+}
+
+.cero {
+    grid-area: cero;
+}
+
+.uno {
+    grid-area: uno;
+}
+
+.dos {
+    grid-area: dos;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.cuatro {
+    grid-area: cuatro;
+}
+
+.cinco {
+    grid-area: cinco;
+}
+
+.seis {
+    grid-area: seis;
+}
+
+.siete {
+    grid-area: siete;
+}
+
+.ocho {
+    grid-area: ocho;
+}
+
+
+.nueve {
+    grid-area: nueve;
+}
+
+.suma {
+    grid-area: suma;
+}
+
+.resta {
+    grid-area: resta;
+}
+
+.divisor {
+    grid-area: divisor;
+}
+
+.multiplicacion {
+    grid-area: multiplicador;
+}
+
+.coma {
+    grid-area: coma;
+}
+
+.igual{
+    grid-area: igual;
+}
+.borrar{
+    grid-area: borrar;
+}
+
+.borrar:hover{
+    color: red;
+}

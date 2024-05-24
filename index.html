@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anton&family=Bangers&family=Bigelow+Rules&family=Cedarville+Cursive&family=Concert+One&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Danfo&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Galada&family=Kaushan+Script&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&family=Play:wght@400;700&family=Poetsen+One&family=Rakkas&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="contenedor">
+            <div class="calculadora">
+                <input class="pantalla" type="text" id="pantalla" readonly>
+                <input class="boton__calculadora cero" type="button" value="0" onclick="agregar('0')">
+                <input class="boton__calculadora uno" type="button" value="1" onclick="agregar('1')">
+                <input class="boton__calculadora dos" type="button" value="2" onclick="agregar('2')">
+                <input class="boton__calculadora tres" type="button" value="3" onclick="agregar('3')">
+                <input class="boton__calculadora cuatro" type="button" value="4" onclick="agregar('4')">
+                <input class="boton__calculadora cinco" type="button" value="5" onclick="agregar('5')">
+                <input class="boton__calculadora seis" type="button" value="6" onclick="agregar('6')">
+                <input class="boton__calculadora siete" type="button" value="7" onclick="agregar('7')">
+                <input class="boton__calculadora ocho" type="button" value="8" onclick="agregar('8')">
+                <input class="boton__calculadora nueve" type="button" value="9" onclick="agregar('9')">
+                <input class="boton__calculadora suma" type="button" value="+" onclick="agregar('+')">
+                <input class="boton__calculadora resta" type="button" value="-" onclick="agregar('-')">
+                <input class="boton__calculadora divisor" type="button" value="/" onclick="agregar('/')">
+                <input class="boton__calculadora multiplicacion" type="button" value="*" onclick="Agregar('*')">
+                <input class="boton__calculadora coma" type="button" value="." onclick="agregar('.')">
+                <input class="boton__calculadora igual" type="button" value="=" onclick="calcular()">
+                <input class="boton__calculadora borrar" type="button" value="C" onclick="borrar()">
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
